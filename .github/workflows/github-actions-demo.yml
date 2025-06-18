@@ -12,14 +12,15 @@ on:
     
 jobs:
   Build-demo:
-  runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
 
-  steps:
-  - run: |
-    echo "this job was triggered by: ${{github.event_name}}"
-  - uses: actions/checkout@v4.2.2
+    steps:
+      - run: |
+          echo "this job was triggered by: ${{github.event_name}}"
+          echo "this is something"
+      - uses: actions/checkout@v4.2.2
 
-  - name: List all files
-  run: |
+      - name: List all files
+        run: |
   
     
