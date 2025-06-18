@@ -16,8 +16,8 @@ jobs:
 
   steps:
   - run: |
-    echo "this job was triggered by: %{{github.event_name}}"
-    echo "the name of branch is %{{github.ref}}"
+    echo "this job was triggered by: ${{github.event_name}}"
+    echo "the name of branch is ${{github.ref}}"
   - uses: actions/checkout@v4.2.2
 
   - name: List all files
